@@ -21,10 +21,13 @@ def propagar(lista):
         if estado_fosforo == 1 and lista_propagada[indice+1] != -1:
             lista_propagada[indice+1] = 1
     lista_propagada = invertir_lista(lista_propagada)
-    for indice, estado_fosforo in zip(range(longitud_lista), lista_propagada):
-        if estado_fosforo == 1 and lista_propagada[indice+1] != -1:
-            lista_propagada[indice+1] = 1
-    lista_propagada = invertir_lista(lista_propagada)
+    
+    # for indice, estado_fosforo in zip(range(longitud_lista), lista_propagada):
+    #     if estado_fosforo == 1 and lista_propagada[indice+1] != -1:
+    #         lista_propagada[indice+1] = 1
+    # lista_propagada = invertir_lista(lista_propagada)
     return lista_propagada
 
-print(propagar([ 0, 0, 0, 1, 0, 0]))
+lista = [ 0,0,0,1]
+print("Lista original  : ",lista)
+print("Lista propagada : ",propagar(lista))

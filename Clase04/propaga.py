@@ -35,7 +35,7 @@ def propagar(lista):
 
 
 # Pruebitas.
-lista = [ 0, 0, 0,-1, 1, 0, 0, 0,-1, 0, 1, 0, 0]
-print("lista original  ",lista)
+lista =  [-1*((i% 6)//2-1) for i in range(60) ]
+print("lista original  : ",lista)
 propagar(lista)
-print("lista propagada " ,lista)
+print("lista propagada : " ,lista)
