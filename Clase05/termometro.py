@@ -5,6 +5,7 @@ def media(muestra):
     return round(sum(muestra)/len(muestra),2)
 
 def mediana(muestra):
+   
     n = len(muestra)
     # Ordeno la lista 
     muestra_ordenada = sorted(muestra)
@@ -18,6 +19,7 @@ def mediana(muestra):
 
 
 def medir_temp(n,mu,sigma):
+   
     mediciones = [(37.5 + round(random.normalvariate(mu,sigma),2))for i in range(n)]
     return mediciones
 
